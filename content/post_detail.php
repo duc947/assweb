@@ -36,7 +36,7 @@
       <?php
       $view = ++$row['view'];
       mysqli_query($connect, "UPDATE post SET view='$view' WHERE id_post='$id'");
-      echo $view;
+      // echo $view;
       }
       include("../backend/closeDB.php");
        ?>
