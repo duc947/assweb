@@ -1,42 +1,23 @@
-<div class="container-fluid">
-    <div class="main-contain">
-        <div class="row">
-            <div class="main-content col-md-8" style="padding: 5px 30px;">
-			<?php $id = $_GET["id_post"] ?>
-                <?php 
-                include("../backend/connectDB.php");
-                $query = mysqli_query($connect, "SELECT * FROM post where id_post = $id");
-                while ($row = $query->fetch_assoc()) { 
-                ?>
-        <?php if ($row['status'] == 1) { ?>
-            <div class="post-title"><h2><?php echo $row['title']; ?></h2></div>
-                <p class="text-muted">Đăng bởi <?php echo $row['poster'] ?> | <?php echo $row['date_time'] ?></p>
-                <?php if ($row['typepost'] == 1) { ?>
-                    <div class="topic"><h5 style="color:rgb(29, 19, 179); ">CÔNG NGHỆ</h5></div>
-                <?php } ?>
-                <?php if ($row['typepost'] == 2) { ?>
-                    <div class="topic"><h5 style="color:rgb(29, 19, 179); ">XE</h5></div>
-                <?php } ?>
-                <?php if ($row['typepost'] == 3) { ?>
-                    <div class="topic"><h5 style="color:rgb(29, 19, 179); ">GAME</h5></div>
-                <?php } ?>
-                <?php if ($row['typepost'] == 4) { ?>
-                    <div class="topic"><h5 style="color:rgb(29, 19, 179); ">TIN TỨC</h5></div>
-                <?php } ?>
-               	<div class="post-image col-md-9" style="margin: 10px auto;">
-                    <img src="../images/<?php echo $row['img_lnk']; ?>" class="img-fluid" alt="Responsive image" >
-                </div>
-                <div class="post-description col-md-12" style="padding: 15px;">
-					<h5><?php echo $row['decription']; ?></h5>
-				</div>
-                <div class="post-main col-md-12" style="padding: 15px;">
-             		<p><?php echo $row['contentpost']; ?></p>
-                </div>
-        <br>
-        <?php } ?>
-      <?php
-      }
-      include("../backend/closeDB.php");
-       ?>
-    </div>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BK Forum</title>
+
+	<!-- Load library -->
+	<?php include("../layout/head.php"); ?>
+
+</head>
+<body>
+<!-- Load header -->
+<?php 
+include("../layout/header.php"); 
+$_SESSION["id_post"] = $_GET["id_post"];
+?>
+<!-- Load content -->
+<?php include("../content/post_detail.php"); ?>
+
+<!-- Load footer -->
+<?php include("../layout/footer.php"); ?>
+
+</body>
+</html>

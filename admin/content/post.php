@@ -18,7 +18,7 @@
 		<div class="col-md-12 line2" style="margin-top: 5px;">
 			<div class="col-md-1 line1" style="float: left; margin-top: 5px; text-align: center;"><?php echo $row['id_post']; ?></div>
 			<div class="col-md-4 line1" style="float: left; margin-top: 5px; text-align: center;">
-				<a href="http://localhost/page/post_detail.php?id_post=<?php echo $row['id_post'] ?>">
+				<a href="../page/post_detail.php?id_post=<?php echo $row['id_post'] ?>">
 					<?php echo $row['title']; ?>
 				</a>
 			</div>
