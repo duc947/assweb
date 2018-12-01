@@ -8,7 +8,7 @@ install :
 
 import assweb.sql 
 
-change connect.php to conect to your database
+config connectDB.php to conect to your database
 
 run on localhost
 
