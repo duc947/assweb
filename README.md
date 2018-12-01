@@ -1,8 +1,9 @@
 # assweb
 Ass_Web-181
 
-install Apache
-install mysql
-install php
+install :
+- Apache
+- mysql
+- php
 
 run on localhost
