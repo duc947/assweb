@@ -70,7 +70,7 @@ CREATE TABLE `post` (
   `typepost` int(11) NOT NULL,
   `img_lnk` text CHARACTER SET armscii8 COLLATE armscii8_general_ci NOT NULL,
   `contentpost` text NOT NULL,
-  `view` int(11) NOT NULL,
+  `view` int(255) NOT NULL,
   `status` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
