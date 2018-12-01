@@ -1,14 +1,14 @@
-<div class="container" style=" margin: 10px 50px;">
- <div class="row">
- <div class="col-md-2">
- 		<div style="padding-top:20px;width: 100%;">
- 			<?php session_start(); ?>
-			<ul>
-				<li>Xin chào, <?php echo $_SESSION['adminName'];?></li>
+<div class="row">
+	<div class="col-md-12">
+		<div style="width: 100%;">
+			<?php session_start(); ?>
+			<ul style="width: 100%; border-style: outset;">
+				<li style="padding: 20px;"><h3>BK Administration</h3></li>
 				<br>
 				<li><a href="../page/post.php">BÀI ĐĂNG</a></li>
 				<li><a href="../page/user.php">NGƯỜI DÙNG</a></li>
 				<li><a href="../backend/logout.php">Thoát</a></li>
 			</ul>
- 		</div>
+		</div>
+	</div>
 </div>
