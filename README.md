@@ -6,4 +6,6 @@ install :
 - mysql
 - php
 
+import assweb.sql 
+change connect.php to conect to your database
 run on localhost
