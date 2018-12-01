@@ -16,3 +16,4 @@ run on localhost
 Update:
 - 30/11: add slider.
 - 1/12: add view.
+- 2/12: fix admin page.
