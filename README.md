@@ -14,5 +14,5 @@ run on localhost
 
 
 Update:
--30/11: add slider.
--1/12: add view.
+- 30/11: add slider.
+- 1/12: add view.
