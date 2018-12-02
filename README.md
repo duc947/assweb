@@ -1,7 +1,7 @@
 # assweb
 Ass_Web-181
 
-install :
+Install :
 - Apache
 - mysql
 - php
