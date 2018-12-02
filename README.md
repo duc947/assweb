@@ -1,5 +1,5 @@
 # assweb
-Ass_Web-181
+Assignment2 Web-181
 
 Install :
 - Apache
@@ -10,7 +10,7 @@ import assweb.sql
 
 config connectDB.php to conect to your database
 
-run on localhost
+run localhost.
 
 
 Update:
