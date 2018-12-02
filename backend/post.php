@@ -12,13 +12,6 @@ if ($_POST['submit']) {
 	$uploadOk = 1;
 	$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 	move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
-		//Check if image file is a actual image or fake image
-		// if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-		// 	echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-		// } else {
-		// 	echo "Sorry, there was an error uploading your file.";
-		// }
-
 	//user
 	$id = $_POST['author'];
 	$query = mysqli_query($connect, "SELECT id_user, name FROM user WHERE id_user='$id'");
@@ -34,16 +27,16 @@ if ($_POST['submit']) {
 	$status = 0;
 
 	if (mysqli_query($connect, "INSERT INTO post
-		(poster, date_time, title, 	decription, typepost, img_lnk, contentpost, status) VALUE 
-		('$author', '$curr_timestamp', '$title', '$decription', '$typepost', '$img_lnk', '$contentpost', $status)")) {
+		(poster, date_time, title, 	decription, typepost, img_lnk, contentpost, status, view) VALUE 
+		('$author', '$curr_timestamp', '$title', '$decription', '$typepost', '$img_lnk', '$contentpost', $status, $status)")) {
 		header("Location: ../page/post.php");
 	} else {
-		echo "Có lỗi xảy ra vui lòng thử lại. <a href='javascript: history.go(-1)'' class='btn btn-default'>Trở lại</a>";
+		echo "Có lỗi kết nối xảy ra vui lòng thử lại. <a href='javascript: history.go(-1)'' class='btn btn-default'>Trở lại</a>";
 		exit;
 	}
 	include("closeDB.php");
 } else {
-	echo "Có lỗi xảy ra vui lòng thử lại. <a href='javascript: history.go(-1)'' class='btn btn-default'>Trở lại</a>";
+	echo "Có lỗi submit xảy ra vui lòng thử lại. <a href='javascript: history.go(-1)'' class='btn btn-default'>Trở lại</a>";
 	exit;
 }
 ?>
