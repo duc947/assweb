@@ -26,6 +26,8 @@ $_SESSION["id_post"] = $_GET["id_post"];
 
 <!-- Load content -->
 <?php include("../content/post_detail.php"); ?>
+
+<!-- FB cmt -->
 <div class="comment col-md-8">
     <div class="fb-comments" data-href="https://www.facebook.com/fdzTeam/" data-width="500px" data-numposts="5"></div>
 </div>
