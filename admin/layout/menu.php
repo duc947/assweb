@@ -1,7 +1,6 @@
 <div class="row">
 	<div class="col-md-12">
 		<div style="width: 100%;">
-			<?php session_start(); ?>
 			<ul style="width: 100%; border-style: outset;">
 				<li style="padding: 20px;"><h3>BK Administration</h3></li>
 				<br>
