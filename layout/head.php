@@ -1,11 +1,11 @@
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Font Roboto -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
     <!-- Font Awesome / Get Icon https://fontawesome.com/icons?d=gallery -->
-    <link rel="stylesheet" href="fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../fonts/fontawesome/css/fontawesome-all.css">
     <!-- Font Ionicon / Get Icon http://ionicons.com/ -->
     <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet">
     <!-- Slick Slider -->
