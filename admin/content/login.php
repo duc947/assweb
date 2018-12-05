@@ -1,7 +1,7 @@
 <div class="container">
 <div class="row">
 	<div class="col-sm-12">
-		<h1>Đăng nhập trang quản trị HAIVL</h1>
+		<h1>Đăng nhập trang quản trị</h1>
 	</div>
 </div>
 <div class="row">
