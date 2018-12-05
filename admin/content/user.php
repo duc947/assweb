@@ -9,6 +9,7 @@
 
         <?php 
         include("../backend/connectDB.php");
+        mysqli_set_charset($connect,"utf8");
         $query = mysqli_query($connect, "SELECT * FROM user");
         while ($row = $query->fetch_assoc()) { 
             ?>

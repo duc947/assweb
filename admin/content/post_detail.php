@@ -5,6 +5,7 @@
 			<?php $id = $_SESSION["id_post"]?>
                 <?php 
                 include("../backend/connectDB.php");
+                mysqli_set_charset($connect,"utf8");
                 $query = mysqli_query($connect, "SELECT * FROM post where id_post = $id");
                 while ($row = $query->fetch_assoc()) { 
                 ?>
