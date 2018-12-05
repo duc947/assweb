@@ -37,7 +37,7 @@
 				</div>
 				<div class="form-group">
 					<input type="submit" name="submit" value="Đăng" class="btn btn-primary btn-lg">
-					<a href='javascript: history.go(-1)'' class="btn btn-danger btn-lg">Trở lại</a>
+					<a href='javascript: history.go(-1)' class="btn btn-danger btn-lg">Trở lại</a>
 				</div>
 			</form>
 		</div>

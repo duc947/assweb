@@ -8,6 +8,7 @@
                     $query = mysqli_query($connect, "SELECT * FROM post where id_post = $id");
                     while ($row = $query->fetch_assoc()) { 
                 ?>
+                <?php if ($row['status'] == 1) { ?>
                 <div class="post-title"><h2><?php echo $row['title']; ?></h2></div>
                     <p class="text-muted">Đăng bởi <?php echo $row['poster'] ?> | <?php echo $row['date_time'] ?></p>
                     <?php if ($row['typepost'] == 1) { ?>
@@ -40,6 +41,7 @@
             mysqli_query($connect, "UPDATE post SET view='$view' WHERE id_post='$id'");
             //echo $view;
             }
+        }
             include("../backend/closeDB.php");
        ?>
     </div>

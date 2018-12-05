@@ -1,7 +1,7 @@
 <?php 
 if ($_POST['submit']) {
 	include("connectDB.php");
-
+	mysqli_set_charset($connect,"utf8");
 	$img_get = mysqli_query($connect, "SELECT * FROM post ORDER BY id_post DESC LIMIT 1");
 	$row = mysqli_fetch_array($img_get);
 	$img = $row['id_post'] + 1;
