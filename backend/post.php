@@ -9,8 +9,6 @@ if ($_POST['submit']) {
 	//var_dump($row['id_post']);
 	$target_dir = "../images/";
 	$target_file = $target_dir . $img .".jpg";
-	$uploadOk = 1;
-	$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 	move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 	//user
 	$id = $_POST['author'];
