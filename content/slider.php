@@ -1,5 +1,6 @@
 <?php 
     include("../backend/connectDB.php");
+    mysqli_set_charset($connect,"utf8");
     $query = mysqli_query($connect, "SELECT * FROM post ORDER BY view DESC limit 4 ");
     while ($row = $query->fetch_assoc()) { 
     if ($row['status'] == 1) { 

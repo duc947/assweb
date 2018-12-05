@@ -12,6 +12,7 @@
     <?php 
         $_SESSION["topic"] = 2;
         include("../backend/connectDB.php");
+        mysqli_set_charset($connect,"utf8");
         $query = mysqli_query($connect, "SELECT * FROM post where typepost = 2 ORDER BY id_post DESC");
         while ($row = $query->fetch_assoc()) { 
     ?>

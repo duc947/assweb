@@ -2,6 +2,7 @@
 	<h1 style="color:red"> Thông Tin Tài Khoản</h1>
 	<?php 
 	include("../backend/connectDB.php");
+	mysqli_set_charset($connect,"utf8");
 	$id_user = $_SESSION['idu'];
 	$query = mysqli_query($connect, "SELECT id_user, name, email FROM user WHERE id_user='$id_user'");
 	$row = mysqli_fetch_array($query);
@@ -32,7 +33,7 @@
 				</div>
 				<?php 
 				include("../backend/connectDB.php");
-
+				mysqli_set_charset($connect,"utf8");
 				$query = mysqli_query($connect, "SELECT * FROM post where poster = '$name' ORDER BY id_post DESC");
 				while ($row = $query->fetch_assoc()) {
 				?>

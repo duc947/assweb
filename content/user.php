@@ -2,6 +2,7 @@
 	<h1 style="color:red"> Thông Tin Tài Khoản</h1>
 	<?php 
 	include("../backend/connectDB.php");
+	mysqli_set_charset($connect,"utf8");
 	$id_user = $_GET['user'];
 	$query = mysqli_query($connect, "SELECT id_user, name, email FROM user WHERE id_user='$id_user'");
 	$row = mysqli_fetch_array($query);

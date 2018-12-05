@@ -8,6 +8,7 @@
     </div>
     <?php 
         include("../backend/connectDB.php");
+        mysqli_set_charset($connect,"utf8");
         $query = mysqli_query($connect, "SELECT * FROM post where title LIKE '%$text%' ORDER BY id_post DESC");
         while ($row = $query->fetch_assoc()) { 
     if ($row['status'] == 1) { ?>

@@ -4,6 +4,7 @@
             <div class="main-content col-md-8" style="padding: 5px 30px;">
 			    <?php $id = $_SESSION["id_post"];
                     include("../backend/connectDB.php");
+                    mysqli_set_charset($connect,"utf8");
                     $query = mysqli_query($connect, "SELECT * FROM post where id_post = $id");
                     while ($row = $query->fetch_assoc()) { 
                 ?>
