@@ -1,7 +1,7 @@
 <?php 
 	$servername = 'localhost';
 	$username = 'root';
-	$password = 'Ngocnhan1997($';
+	$password = '';
 	$dbname = 'assweb';
 
 	// Create connection
