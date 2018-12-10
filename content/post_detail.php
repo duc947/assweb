@@ -1,6 +1,15 @@
 <div class="container-fluid">
     <div class="main-contain">
         <div class="row">
+            <div class="col-md-9">
+            </div>
+            <?php
+                include("../content/adv.php"); 
+            ?>
+        </div>
+    </div>
+    <div class="main-contain">
+        <div class="row">
             <div class="main-content col-md-8" style="padding: 5px 30px;">
 			    <?php $id = $_SESSION["id_post"];
                     include("../backend/connectDB.php");

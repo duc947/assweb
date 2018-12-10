@@ -7,6 +7,9 @@
                     <span>Đăng bài</span>
                 </button>
             <?php } ?>
+            <?php
+                include("../content/adv.php"); 
+            ?>
         </div>
     </div>
     <?php 

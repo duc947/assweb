@@ -3,7 +3,10 @@
     <?php //echo $text?>
     <div class="main-contain">
         <div class="row ad-title">
-            <h3 class="col-md-7 col-sm-6 col-6"> Kết quả tìm kiếm cho từ khóa "<?php echo $text?>"</h3>
+            <h3 class="col-md-9 col-sm-6 col-6"> Kết quả tìm kiếm cho từ khóa "<?php echo $text?>"</h3>
+            <?php
+                include("../content/adv.php"); 
+            ?>
         </div>
     </div>
     <?php 

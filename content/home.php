@@ -8,6 +8,9 @@
                 <br>
                 <hr>
             </div>
+            <?php
+                include("../content/adv.php"); 
+            ?>
         </div>
     </div>
     <?php 
@@ -54,6 +57,7 @@
                     </div>
                 </div>
             </div>
+            <?php } ?>
         </div>
     </div>
     <div id="back-to-top" class="hidden">
@@ -61,7 +65,6 @@
     </div>
 </div>
 </div>
-<?php } ?>
 <?php
     }
     include("../backend/closeDB.php");
