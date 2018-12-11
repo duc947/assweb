@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="main-contain">
         <div class="row ad-title">
-            <h3 class="col-md-7 col-sm-6 col-6"> XE </h3>
+            <h3 class="col-md-9 col-sm-6 col-6"> XE </h3>
             <?php if (isset($_SESSION['id_user']) && $_SESSION['id_user']) { ?>
                 <button class="col-md-2 col-sm-4 col-4" onclick="window.location.href='../page/post.php'">
                     <span>Đăng bài</span>
