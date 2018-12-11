@@ -1,13 +1,17 @@
 <div class="container-fluid">
     <div class="main-contain">
         <div class="row ad-title">
-            <h3 class="col-md-9 col-sm-6 col-6"> GAME </h3>
             <?php if (isset($_SESSION['id_user']) && $_SESSION['id_user']) { ?>
+            <h3 class="col-md-7 col-sm-6 col-6"> XE </h3>
                 <button class="col-md-2 col-sm-4 col-4" onclick="window.location.href='../page/post.php'">
                     <span>Đăng bài</span>
                 </button>
-            <?php } ?>
+            <?php } 
+            else {
+            ?>
+                <h3 class="col-md-9 col-sm-6 col-6"> XE </h3>
             <?php
+                } 
                 include("../content/adv.php"); 
             ?>
         </div>
